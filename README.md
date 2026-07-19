@@ -83,6 +83,22 @@ After conversion, insert the paths to the resulting CSV files in the following l
 comments_raw = pd.read_csv("path/to/comments_raw.csv")
 submissions_raw = pd.read_csv("path/to/submissions_raw.csv")
 ```
+
+
+## Raw Data
+
+The raw and cleaned Reddit datasets are available in the repository's Releases section.
+
+Files:
+- `DecidingToBeBetter_comments_full.csv`
+- `DecidingToBeBetter_submissionsNEW.csv`
+- `DecidingToBeBetter_comments_cleanedd.csv`
+- `DecidingToBeBetter_submissions_cleaned.csv`
+
+Download the required files and place them in the same folder as the Python scripts before running the analysis scripts.
+
+The script `tocsv.py` documents the conversion process from `.zst` files to CSV format.
+
 ## Figures
 
 The `images` folder contains all figures included in the thesis.
