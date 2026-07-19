@@ -94,3 +94,12 @@ The script `tocsv.py` documents the conversion process from `.zst` files to CSV 
 ## Figures
 
 The `images` folder contains all figures included in the thesis.
+
+## Requirements
+
+The analysis was tested with Python 3.13 and requires the following libraries:
+
+- pandas
+- matplotlib
+- scipy
+- networkx
