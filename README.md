@@ -69,21 +69,6 @@ After preprocessing the original and rewritten texts, their token counts were co
 
 The script `chatGpt_text.py` was used only once to select the 90 posts and create the empty rewriting template. It should not be run again after the rewritten texts have been added manually, because it overwrites `rewrite_90_posts_template.csv`.
 
-## Raw Data
-
-The raw Pushshift Reddit datasets are not included in this repository due to their large file size.
-
-`user_analysis.py` expects the raw comments and submissions data in CSV format.
-
-If the original datasets are available only as `.zst` files, they must first be converted to CSV. The script `tocsv.py` can be used for this conversion.
-
-After conversion, insert the paths to the resulting CSV files in the following lines in `user_analysis.py`:
-
-```python
-comments_raw = pd.read_csv("path/to/comments_raw.csv")
-submissions_raw = pd.read_csv("path/to/submissions_raw.csv")
-```
-
 
 ## Raw Data
 
@@ -96,6 +81,13 @@ Files:
 - `DecidingToBeBetter_submissions_cleaned.csv`
 
 Download the required files and place them in the same folder as the Python scripts before running the analysis scripts.
+
+The raw datasets are required for:
+- `analysis_comments.py`
+- `analysis_submissions.py`
+- `user_analysis.py`
+
+All other analysis scripts use the cleaned datasets.
 
 The script `tocsv.py` documents the conversion process from `.zst` files to CSV format.
 
